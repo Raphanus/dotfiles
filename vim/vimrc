@@ -1,0 +1,111 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" VIMRC
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+execute pathogen#infect()
+
+
+set history=700
+
+" filetypes
+filetype plugin on
+filetype indent on
+
+set autoread
+
+
+set wildmenu
+
+set ruler
+
+set cmdheight=2
+
+set hid
+
+"key functionality that makes sense
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+"searching
+set ignorecase
+
+set smartcase
+
+set hlsearch
+
+set incsearch
+
+set lazyredraw
+
+set magic
+
+set showmatch
+
+set mat=2
+
+set number
+
+"visuals
+syntax enable
+syntax on
+
+"cursor bar
+set cursorline
+
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+
+colorscheme solarized
+
+set background=dark
+
+"enconding and file types
+set encoding=utf8
+
+set ffs=unix,dos,mac
+
+
+set expandtab
+
+set smarttab
+
+set shiftwidth=4
+set tabstop=4
+
+set lbr
+set tw=500
+
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+""""""
+"status line
+""""""
+
+set laststatus=2
+
+" Format the status line
+let g:airline_powerline_fonts = 1  
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
+"""""""""
+" helper functions
+"""""""""
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE '
+    en
+    return ''
+endfunction
+
+
