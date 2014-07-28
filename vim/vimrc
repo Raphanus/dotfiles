@@ -4,7 +4,6 @@
 
 execute pathogen#infect()
 
-
 set history=700
 
 " filetypes
@@ -12,14 +11,9 @@ filetype plugin on
 filetype indent on
 
 set autoread
-
-
 set wildmenu
-
 set ruler
-
 set cmdheight=2
-
 set hid
 
 "key functionality that makes sense
@@ -28,21 +22,13 @@ set whichwrap+=<,>,h,l
 
 "searching
 set ignorecase
-
 set smartcase
-
 set hlsearch
-
 set incsearch
-
 set lazyredraw
-
 set magic
-
 set showmatch
-
 set mat=2
-
 set number
 
 "visuals
@@ -67,7 +53,6 @@ set ffs=unix,dos,mac
 
 
 set expandtab
-
 set smarttab
 
 set shiftwidth=4
@@ -75,7 +60,6 @@ set tabstop=4
 
 set lbr
 set tw=500
-
 
 set ai "Auto indent
 set si "Smart indent
